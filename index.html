@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIVENITI AI - AI-Powered Solutions for Tomorrow's Enterprise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for Hero Section background effects */
+        .hero-bg-effects {
+            background-image: radial-gradient(circle at 20% 50%, rgba(234, 88, 12, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+        }
+        /* Transition for scrolled header */
+        .scrolled-header {
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        /* Style for the logo image to ensure visibility and size */
+        .header-logo {
+            height: 48px; /* Maintain height similar to original placeholder */
+            width: auto;
+        }
+        .footer-logo {
+            height: 40px;
+            width: auto;
+            /* Optional: You may need to apply an invert filter if the image has a dark background and the footer is dark */
+            /* filter: brightness(0) invert(1); */
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img src="./Sivenity AI - logo - website.png" alt="SIVENITI AI Logo" class="header-logo" />
+                    </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-orange-600 font-medium transition">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-orange-600 font-medium transition">About</a>
+                    <a href="#industries" class="text-gray-700 hover:text-orange-600 font-medium transition">Industries</a>
+                    <a href="#contact" class="bg-gradient-to-r from-orange-500 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:scale-105">
+                        Get Started
+                    </a>
+                </div>
+
+                <button id="menu-button" class="md:hidden">
+                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-4 pb-6 space-y-3">
+                <a href="#services" class="block text-gray-700 hover:text-orange-600 font-medium">Services</a>
+                <a href="#about" class="block text-gray-700 hover:text-orange-600 font-medium">About</a>
+                <a href="#industries" class="block text-gray-700 hover:text-orange-600 font-medium">Industries</a>
+                <a href="#contact" class="block bg-gradient-to-r from-orange-500 to-purple-600 text-white px-6 py-3 rounded-full font-semibold text-center">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 px-4 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-50 via-purple-50 to-blue-50 opacity-70"></div>
+        <div class="absolute inset-0 hero-bg-effects"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-block mb-6 px-4 py-2 bg-white rounded-full shadow-md">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-purple-600 font-semibold">
+                        Innovate • Transform • Excel
+                    </span>
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+                    AI-Powered Solutions for
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-purple-500 to-blue-500"> Tomorrow's Enterprise</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed">
+                    Harness the power of Artificial Intelligence with comprehensive IT solutions, advanced AI/ML training, intelligent media services, and smart HR solutions
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#services" class="group bg-gradient-to-r from-orange-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl transition transform hover:scale-105 inline-flex items-center justify-center">
+                        Explore Our Services
+                        <span class="ml-2 w-5 h-5 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="#contact" class="bg-white text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition border-2 border-gray-200 inline-flex items-center justify-center">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Core Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive solutions designed to accelerate your business growth and digital transformation
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform text-4xl">
+                        💻
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI-Powered IT Services & Software Development</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Leverage cutting-edge AI and machine learning to build intelligent software solutions. From AI-driven development and maintenance to smart automation, we deliver customized IT consulting, outsourcing, and system integration services that transform your business operations.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ AI-Assisted Development</span>
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ Intelligent Automation</span>
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ ML-Powered Analytics</span>
+                    </div>
+                    
+                    <a href="#contact" class="inline-flex items-center text-orange-600 font-semibold hover:text-purple-600 transition">
+                        Learn More <span class="ml-1 w-5 h-5">›</span>
+                    </a>
+                </div>
+
+                <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform text-4xl">
+                        🎓
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI & Advanced Technology Training</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Master the future of technology with our specialized training academies. Expert-led programs in Artificial Intelligence, Machine Learning, Data Science, Deep Learning, Natural Language Processing, and DevOps. We combine theoretical knowledge with hands-on AI projects, internships, and guaranteed placement support.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ AI/ML Specialization</span>
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ Hands-on AI Projects</span>
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ Industry Certifications</span>
+                    </div>
+                    
+                    <a href="#contact" class="inline-flex items-center text-orange-600 font-semibold hover:text-purple-600 transition">
+                        Learn More <span class="ml-1 w-5 h-5">›</span>
+                    </a>
+                </div>
+
+                <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform text-4xl">
+                        🎥
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI-Enhanced Digital Media Services</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Revolutionary AI-powered content creation and production services. Our advanced AI algorithms streamline pre-production, intelligent budgeting, automated localization, and multi-platform distribution. Transform your film, advertising, and digital media workflows with generative AI and smart automation.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ Generative AI Content</span>
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ Smart Localization</span>
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ Automated Workflows</span>
+                    </div>
+                    
+                    <a href="#contact" class="inline-flex items-center text-orange-600 font-semibold hover:text-purple-600 transition">
+                        Learn More <span class="ml-1 w-5 h-5">›</span>
+                    </a>
+                </div>
+
+                <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform text-4xl">
+                        👥
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Smart HR & Talent Solutions</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">AI-enhanced recruitment and HR management solutions for the digital age. Our intelligent talent acquisition platform uses AI-driven candidate matching, predictive analytics, and automated screening to connect you with top IT and educational professionals efficiently.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ AI Candidate Matching</span>
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ Predictive Analytics</span>
+                        <span class="px-3 py-1 bg-gradient-to-r from-orange-100 to-purple-100 text-purple-700 text-sm font-medium rounded-full">✨ Smart Screening</span>
+                    </div>
+                    
+                    <a href="#contact" class="inline-flex items-center text-orange-600 font-semibold hover:text-purple-600 transition">
+                        Learn More <span class="ml-1 w-5 h-5">›</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Choose SIVENITI AI</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Your trusted partner for innovative technology solutions and business transformation
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-orange-500 to-purple-600 text-white mb-4">
+                        🎯
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Industry Expertise</h3>
+                    <p class="text-gray-600">Deep domain knowledge across IT, media, and education sectors</p>
+                </div>
+
+                <div class="text-center p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-orange-500 to-purple-600 text-white mb-4">
+                        🏆
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Quality Driven</h3>
+                    <p class="text-gray-600">Commitment to excellence in every project we undertake</p>
+                </div>
+
+                <div class="text-center p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-orange-500 to-purple-600 text-white mb-4">
+                        🌍
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Global Reach</h3>
+                    <p class="text-gray-600">Serving clients across India and international markets</p>
+                </div>
+
+                <div class="text-center p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-orange-500 to-purple-600 text-white mb-4">
+                        ✅
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">End-to-End Solutions</h3>
+                    <p class="text-gray-600">Comprehensive services from concept to deployment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industries" class="py-20 px-4 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Industries We Serve</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Delivering specialized solutions across diverse sectors
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-white/20 transition group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition">💻</div>
+                    <div class="text-sm font-medium">Information Technology</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-white/20 transition group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition">📚</div>
+                    <div class="text-sm font-medium">Education & E-Learning</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-white/20 transition group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition">🎬</div>
+                    <div class="text-sm font-medium">Media & Entertainment</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-white/20 transition group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition">🏥</div>
+                    <div class="text-sm font-medium">Healthcare</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-white/20 transition group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition">🏦</div>
+                    <div class="text-sm font-medium">Finance & Banking</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-white/20 transition group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition">🛒</div>
+                    <div class="text-sm font-medium">Retail & E-Commerce</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 bg-gradient-to-r from-orange-500 via-purple-600 to-blue-600">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl mb-10 opacity-90">
+                Let's discuss how SIVENITI AI can help you achieve your digital goals
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:info@siveniti.ai" class="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl transition transform hover:scale-105">
+                    Get in Touch
+                </a>
+                <a href="tel:+91-XXX-XXX-XXXX" class="bg-white/20 backdrop-blur-lg text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 transition border-2 border-white/30">
+                    Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="./Sivenity AI - logo - website.png" alt="SIVENITI AI Logo" class="footer-logo mb-4" />
+                    <p class="text-gray-400">Empowering businesses through innovative AI-powered technology solutions</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-orange-500 transition">IT Development</a></li>
+                        <li><a href="#services" class="hover:text-orange-500 transition">Training</a></li>
+                        <li><a href="#services" class="hover:text-orange-500 transition">Digital Media</a></li>
+                        <li><a href="#services" class="hover:text-orange-500 transition">HR Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-orange-500 transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-orange-500 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: info@siveniti.ai</li>
+                        <li>Phone: +91-XXX-XXX-XXXX</li>
+                        <li>Location: India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 SIVENITI AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+        const menuIcon = document.getElementById('menu-icon');
+
+        // Mobile Menu Toggle
+        menuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenu.classList.contains('hidden');
+            if (isExpanded) {
+                mobileMenu.classList.remove('hidden');
+                // Change icon to X
+                menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+            } else {
+                mobileMenu.classList.add('hidden');
+                // Change icon back to Menu
+                menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+            }
+        });
+
+        // Scroll Effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled-header');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('scrolled-header');
+                navbar.classList.add('bg-transparent');
+            }
+        });
+    </script>
+</body>
+</html>
